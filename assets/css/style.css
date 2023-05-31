@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --azulEscuro: #101332;
+    --verde: #00f965;
+    --azulClaro: #0e6cd8;
+    --branco: #fff;
+    --dmSans: 'DM Sans', sans-serif;
+    --cinza: #828282;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 6rem;
+    background-color: var(--azulEscuro);
+    font-family: var(--dmSans);
+    scrollbar-color: #888888 #F0F0F0;
+    scrollbar-width: thin;
+}
+
+/*ALTERAÇÃO DA BARRA DE ROLAGEM*/
+
+body::-webkit-scrollbar {
+    /* Largura da barra de rolagem */
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* Cor da alça da barra de rolagem */
+    background-color: var(--verde);
+    /* Raio da borda da alça da barra de rolagem */
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    /* Cor de fundo da barra de rolagem */
+    background-color: var(--azulEscuro);
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: var(--azulEscuro);
+}
+
+nav .nav-link {
+    position: relative;
+    color: var(--branco);
+    transition: .5s;
+}
+
+nav .nav-link:hover {
+    color: var(--branco);
+}
+
+nav .nav-link::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--verde);
+    transition: .5s;
+}
+
+nav .nav-link:hover::after {
+    height: 2px;
+    width: 100%;
+}
+
+.nav-link:focus {
+    color: var(--branco);
+}
+
+.logoHeader {
+    width: 150px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--verde);
+    font-size: 2rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas {
+    background-color: var(--azulClaro);
+}
+
+
+/*HEADER*/
+.textoApresentacao {
+    border: 1px solid red;
+    padding: 1rem;
+    color: var(--branco);
+}
+
+.textoApresentacao h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.textoApresentacao p {
+    color: var(--cinza);
+}
+
+.btnVerde {
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 0px;
+}
+
+.btnOutlineCinza {
+    background-color: transparent;
+    border: 1px solid var(--cinza);
+    color: var(--cinza);
+    border-radius: 0px;
+}
