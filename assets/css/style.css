@@ -45,6 +45,7 @@ body::-webkit-scrollbar-track {
 .titulo {
     color: var(--branco);
     font-weight: 700;
+    font-size: 3rem;
 }
 
 .ponto {
@@ -128,14 +129,15 @@ nav .nav-link:hover::after {
 
 .btnVerde {
     background-color: var(--verde);
-    color: var(--branco);
+    color: var(--azulEscuro);
     border-radius: 0px;
     border: 1px solid var(--verde);
+    font-weight: 700;
 }
 
 .btnVerde:hover {
     background-color: #10e766;
-    color: #f7f7f7;
+    color: var(--azulEscuro);
 }
 
 .btnOutlineCinza {
@@ -143,11 +145,114 @@ nav .nav-link:hover::after {
     border: 1px solid var(--cinza);
     color: var(--cinza);
     border-radius: 0px;
+    font-weight: 700;
 }
 
 .btnOutlineCinza:hover {
-
     background-color: var(--cinza);
     color: var(--azulEscuro);
+}
 
+.iconeSobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--verde);
+    color: var(--azulEscuro);
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.linkSobreM:hover {
+    color: var(--branco);
+}
+
+/*MEUS CONHECIMENTOS*/
+
+.skill * {
+    z-index: 1;
+}
+
+.skill {
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.skill::before {
+    content: '';
+    width: 35%;
+    height: 300%;
+    left: 30%;
+    position: absolute;
+    background: linear-gradient(#00f965, #0e6cd8);
+    transform: rotate(143deg);
+}
+
+.skill:hover::before {
+    animation: animacaoBorda 3s linear infinite;
+}
+
+.skill::after {
+    content: '';
+    position: absolute;
+    background: var(--azulEscuro);
+    inset: 3px;
+    border-radius: 5px;
+}
+
+.skill i {
+    color: var(--verde);
+}
+
+.skill h3 {
+    color: var(--branco);
+}
+
+.skill span {
+    color: var(--cinza);
+}
+
+/*MINHAS SKILLS*/
+.valorSkills {
+    font-size: 3.2rem;
+    color: var(--cinza);
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.txtVlrSkill {
+    font-size: 1.5rem;
+    color: var(--verde);
+}
+
+/*CONTATO*/
+
+.form-control {
+    background-color: var(--azulEscuro);
+    border: 1px solid var(--cinza);
+    border-radius: 0px;
+    font-size: 1.2rem;
+    color: var(--branco);
+}
+
+.form-control:focus {
+
+    background-color: var(--azulEscuro);
+    border: 1px solid var(--azulClaro);
+    color: var(--branco);
+    box-shadow: none;
+
+}
+
+@keyframes animacaoBorda {
+    0% {
+        transform: rotate(143deg);
+    }
+
+    100% {
+        transform: rotate(500deg);
+    }
 }
