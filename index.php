@@ -63,7 +63,7 @@
     </nav>
 
 
-    <header class="container">
+    <header class="container mb-5">
 
         <section class="row">
 
@@ -86,6 +86,26 @@
         </section>
 
     </header>
+
+    <section class="container">
+
+        <div class="row text-center mb-3">
+
+            <h1 class="titulo">Sobre mim <span class="ponto">.</span></h1>
+
+        </div><!--Fim row-->
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <p class="branco text-center px-md-5">Olá, sou Gabriel, um desenvolvedor web apaixonado com 22 anos de idade e mais de 3 anos de experiência. Minhas habilidades abrangem uma variedade de linguagens e tecnologias, incluindo HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, JQuery, VueJS e Laravel. Com dedicação e criatividade, busco criar experiências digitais incríveis, desenvolvendo aplicativos e sites responsivos e intuitivos. Confira meu portfólio para ver alguns dos projetos em que trabalhei e descubra como posso ajudar a transformar suas ideias em realidade.</p>
+
+            </div><!--Fim col-->
+
+        </div>
+
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
