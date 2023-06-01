@@ -99,7 +99,6 @@ nav .nav-link:hover::after {
 
 /*HEADER*/
 .textoApresentacao {
-    border: 1px solid red;
     padding: 1rem;
     color: var(--branco);
 }
@@ -117,6 +116,14 @@ nav .nav-link:hover::after {
     background-color: var(--verde);
     color: var(--branco);
     border-radius: 0px;
+    border: 1px solid var(--verde);
+}
+
+.btnVerde:hover {
+
+    background-color: #10e766;
+    color: #f7f7f7;
+
 }
 
 .btnOutlineCinza {
@@ -124,4 +131,11 @@ nav .nav-link:hover::after {
     border: 1px solid var(--cinza);
     color: var(--cinza);
     border-radius: 0px;
+}
+
+.btnOutlineCinza:hover {
+
+    background-color: var(--cinza);
+    color: var(--azulEscuro);
+
 }

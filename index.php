@@ -73,7 +73,7 @@
                     <p>Desenvolvedor FullStack</p>
                 </div>
 
-                <div class="d-flex align-items-start gap-3 w-100">
+                <div class="d-flex align-items-start gap-3 w-100 ps-3">
                     <a href="#" class="btn btnVerde">Baixar CV</a>
                     <a href="#" class="btn btnOutlineCinza">Saiba mais</a>
                 </div>
