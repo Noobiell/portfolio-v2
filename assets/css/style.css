@@ -261,6 +261,9 @@ nav .nav-link:hover::after {
     font-size: .9rem;
 }
 
+
+/*ANIMAÇÃO CARDS CONHECIMENTOS*/
+
 @keyframes animacaoBorda {
     0% {
         transform: rotate(143deg);
@@ -270,3 +273,24 @@ nav .nav-link:hover::after {
         transform: rotate(500deg);
     }
 }
+
+
+/* TAMANHO PARA TELAS FOLD E UM POUCO MAIOR */
+@media screen and (min-width: 0px) and (max-width: 329px) {
+
+
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+}
+
+/* TELA CELULARES NORMAIS */
+@media screen and (min-width: 330px) and (max-width: 767px) {}
+
+/* TELA TABLET OU MONITOR PEQUENO */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* TELAS DESKTOP E NOTEBOOK */
+@media screen and (min-width: 992px) and (max-width: 1999px) {}
