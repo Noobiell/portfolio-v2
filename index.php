@@ -24,7 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--Tema dark-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/themes/dark/dark.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css"> -->
 
 
     <title>Noobiel dev - Portfólio</title>
@@ -339,7 +340,8 @@
                 </div><!--Fim col-->
 
                 <div class="col-12">
-                    <textarea class="form-control" id="message" name="message" placeholder="Mensagem" rows="5"></textarea>
+                    <textarea class="form-control" id="message" name="message" placeholder="Mensagem" rows="5" maxlength="250" oninput="updateCharacterCount()"></textarea>
+                    <span class="counter"><span id="counter"></span>/250</span>
                 </div>
 
                 <div class="col-12 text-center pt-3">

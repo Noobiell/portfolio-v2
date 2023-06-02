@@ -247,6 +247,20 @@ nav .nav-link:hover::after {
 
 }
 
+.counter {
+    margin-top: .5rem;
+    background-color: var(--verde);
+    color: var(--azulEscuro);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 25px;
+    border-radius: 50px;
+    font-size: .9rem;
+}
+
 @keyframes animacaoBorda {
     0% {
         transform: rotate(143deg);
